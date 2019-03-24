@@ -1,0 +1,7 @@
+.display-row{
+    display: flex;
+    flex-direction: row !important;
+}
+.sushi-heading{
+    padding-bottom: 22px;
+}

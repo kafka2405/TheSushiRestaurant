@@ -1,0 +1,252 @@
+
+/*----------------------------------------------------*/
+/******** SOME OF COMMON CSS ********/
+/*----------------------------------------------------*/
+
+/*RESET PADDING AND MARGIN*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/* BACKGROUND AND BODYWRAPPER CSS */
+body{
+    /*reset margin and padding*/
+    margin: 0;
+    padding: 0;
+    /*set font for whole page*/
+    font-family: sans-serif;
+    /*Default font size for text is 16px*/
+    font-size: 16px;
+    /*Atrribute that specifies distance between text rows*/
+    line-height: 22px;
+    /*Set color text default to black*/
+    color: #000;
+    /*set background image and color*/
+    background-color: #d5f46b;
+    /*Image source*/
+    background-image: url("../image/background/wine.png");
+    /*allow background repeat hoziontally*/
+    background-repeat: repeat-x;
+    /*default background position top left*/
+    background-position: top center;
+    /*allow background scroll along the page*/
+    background-attachment: fixed;
+    /*set background size*/
+}
+.page-wrapper{
+    /*set background color to white*/
+    background-color: #fff;
+    /*set maximum width for content*/
+    max-width: 980px;
+    /*centering body by margin*/
+    margin: 0 auto 50px auto;
+    /*adjust box shadow for body*/
+    box-shadow: 0 0 24px rgba(0,0,0,.8);
+    /*adjust border radius for bottom-left and right*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*COMMON CSS FOR IMAGE*/
+.default-image{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+
+}
+/*ALIGN LEFT AND RIGHT FOR THE WHOLE PAGE*/
+.alignment{
+    padding-left:20px;
+    padding-right:20px;
+}
+/*FOR BOLD TEXT ONLY*/
+.strong-text{
+    font-weight: bold;
+}
+/*FOR TEXT ON THE RIGHT*/
+.align-right{
+    text-align: right !important;
+}
+/*FOR TEXT ON THE LEFT*/
+.align-left{
+    text-align: left !important;
+}
+/*Setting font for twos size of main content*/
+.text-page-heading{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32.8px;
+}
+.text-sharing-heading{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+}
+/*Font of footer*/
+.text-footer{
+    font-size: 13.6px;
+    color: #000;
+}
+/*for those text which need to underline*/
+.underlined-text{
+    text-decoration: underline;
+}
+
+/*Calculated Witdh on percentage according to the whole page size */
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+
+/*----------------------------------------------------*/
+/******** HEADER CSS ********/
+/*----------------------------------------------------*/
+.header{
+    background-color: #535353;
+}
+.header-heading{
+    padding: 30px 0;
+}
+/*Setting font for header include title and subtitle*/
+.header-title{
+    padding: 6px 0;
+    color: #d5f46b;
+    font-size: 47px;
+    line-height: 47px;
+    font-weight: 500;
+}
+.header-subtitle{
+    padding: 2px 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+}
+/*----------------------------------------------------*/
+/******** NAVIGATION CSS ********/
+/*----------------------------------------------------*/
+.header-navigation{
+    background-color: #303030;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.navigation{
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+.navigation-item{
+    padding: 0 20px;
+}
+.navigation-link{
+    color:#fff;
+    text-decoration: none;
+}
+.navigation-link:hover{
+    text-decoration: underline;
+}
+.navigation-link-current{
+    font-weight: bold;
+}
+/*----------------------------------------------------*/
+/******** COMMON BODY CSS ********/
+/*----------------------------------------------------*/
+.page-content{
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30.4px;
+    padding-bottom: 22px;
+}
+.page-heading{
+    padding: 9.6px 0;
+}
+/*SHARING BOX CSS*/
+.right-side{
+    margin-left: auto;
+    padding-top: 30.4px;
+}
+.sharing{
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.sharing-heading{
+    border-radius: 10px;
+    padding: 11px 15px;
+    margin: 0;
+}
+
+
+.sharing-content{
+    padding: 5.5px 15px 11px 15px;
+}
+.sharing__item{
+    list-style: none;
+    display: flex;
+}
+.sharing__social-icon{
+    /*Set this property to make image appear once*/
+    background-repeat: no-repeat;
+    /*Set background image cover the whole div*/
+    background-size: cover;
+    /*Size of image*/
+    height: 20px;
+    width: 20px;
+    /*Make background image have no margin*/
+    margin-right:5px;  
+}
+.icon-facebook{
+    background-image: url("../image/icon/facebook.png");
+}
+.icon-google-plus{
+    background-image: url("../image/icon/google.png");
+}
+.icon-twitter{
+    background-image: url("../image/icon/twitter.png");
+}
+/*----------------------------------------------------*/
+/******** PAGINATION CSS ********/
+/*----------------------------------------------------*/
+.pagination {
+    font-size: 12px;
+}
+
+.pagination__link {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination--active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination__link:hover:not(.pagination--active){
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/****** FOOTER  ******/
+.footer-powered-by{
+    padding: 32px 0 22px 0;
+    border-top: 1px solid rgba(0,0,0,.2);
+    color: #000;
+}
+/*-----------------------------------------------------------*/
+

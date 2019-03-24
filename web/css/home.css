@@ -1,0 +1,28 @@
+.introduction{
+    padding-bottom: 22px;
+}
+.type-of-sushi{
+    border-top: 3px dotted rgba(0,0,0,.2);
+    padding: 25px 0;
+}
+.sushi-heading{
+    padding-bottom: 25px;
+}
+.item-image{
+    margin:3px 20px 8px 0;
+}
+.item-description{
+    margin-left: auto;
+}
+.item-image-setting{
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+}
+.heading-link{
+    text-decoration: none;
+    color: #000;
+}
+.heading-link:active{
+    color: #000;
+}

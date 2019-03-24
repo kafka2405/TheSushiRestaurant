@@ -1,0 +1,27 @@
+.find-us-content{
+    padding: 11px 0 22px 0;
+}
+.page-info{
+    padding-top: 22px;
+    display: flex;
+    border-bottom: 3px dotted rgba(0,0,0,.2);
+}
+.title-heading{
+    margin-bottom: 11px;
+}
+.address__details{
+    margin-bottom: 11px;
+}
+.tel-email{
+    display: flex;
+}
+.tel-email__heading{
+    width: 25%;
+}
+.tel-email__data{
+    width: 75%;
+}
+.google-maps{
+    margin: 16px 0;
+}
+
