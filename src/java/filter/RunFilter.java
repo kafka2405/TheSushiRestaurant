@@ -11,12 +11,12 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebFilter(urlPatterns = {"/home.jsp","/menuPriceList.jsp","/findUs.jsp"})
-public class RunFilter implements Filter{
+@WebFilter(urlPatterns = {"/*"})
+public class RunFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        
+
     }
 
     @Override
@@ -24,14 +24,23 @@ public class RunFilter implements Filter{
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         String servletPath = httpRequest.getServletPath();
-        if(servletPath.contains("home.jsp")) httpResponse.sendRedirect("homeController");
-        if(servletPath.contains("menuPriceList.jsp")) httpResponse.sendRedirect("aboutController");
-        if(servletPath.contains("findUs.jsp")) httpResponse.sendRedirect("findController");
+        if (servletPath.endsWith(".jsp")) {
+            if (servletPath.contains("menuPriceList.jsp")) {
+                httpResponse.sendRedirect("aboutController");
+            } else if (servletPath.contains("findUs.jsp")) {
+                httpResponse.sendRedirect("findController");
+            } else {
+                httpResponse.sendRedirect("homeController");
+            }
+        } else {
+            chain.doFilter(request, response);
+        }
+
     }
 
     @Override
     public void destroy() {
-        
+
     }
-    
+
 }

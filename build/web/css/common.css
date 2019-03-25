@@ -234,7 +234,7 @@ body{
 .pagination--active {
     background-color: #4CAF50;
     color: white;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .pagination__link:hover:not(.pagination--active){
