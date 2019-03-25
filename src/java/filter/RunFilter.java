@@ -26,9 +26,9 @@ public class RunFilter implements Filter {
         String servletPath = httpRequest.getServletPath();
         if (servletPath.endsWith(".jsp")) {
             if (servletPath.contains("menuPriceList.jsp")) {
-                httpResponse.sendRedirect("aboutController");
+                httpResponse.sendRedirect("menuController");
             } else if (servletPath.contains("findUs.jsp")) {
-                httpResponse.sendRedirect("findController");
+                httpResponse.sendRedirect("findUsController");
             } else {
                 httpResponse.sendRedirect("homeController");
             }
